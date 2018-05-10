@@ -56,7 +56,7 @@ function query() {
       tbl.push(
         [
           bam.department_id, bam.department_name,
-          bam.over_head_costs
+          bam.over_head_costs, bam.product_sales, bam.TotalProfit
         ]
       );
     });
