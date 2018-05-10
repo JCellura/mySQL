@@ -46,3 +46,7 @@ VALUES
   ("Running", 6000);
 
 SELECT * FROM departments;
+
+-- This creates the alias table TotalProfits that will exist only when requested by the executive
+SHOW TABLES;
+CREATE VIEW bamazon.TotalProfits AS SELECT department_id, department_name, over_head_costs, product_sales, over_head_costs-product_sales AS TotalProfit FROM Departments;
