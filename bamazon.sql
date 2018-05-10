@@ -13,16 +13,16 @@ CREATE TABLE products (
 
 INSERT INTO products (product_name, department_name, price, stock_quantity, product_sales)
 VALUES
-  ("IKEA Brada Laptop Support", "Tech", 4.99, 40, 0),
-  ("Incase Laptop Sleeve", "Tech", 69.95, 55, 0),
-  ("Vincent van Gogh Mousepad", "Tech", 9.99, 3, 0),
+  ("MacBook Air", "Tech", 899.99, 50, 0),
+  ("Playstation 4", "Tech", 299.95, 30, 0),
+  ("XBOX ONEs", "Tech", 399.99, 20, 0),
   ("Apple Magic Mouse 2", "Tech", 79, 180, 0),
-  ("IKEA Tisdag Work Lamp", "Lighting", 39.99, 4, 0),
-  ("IKEA Bekant Sit/Stand Desk", "Office", 499.99, 100, 0),
-  ("Camelbak Chute 1L", "Outdoor", 14, 20, 0),
-  ("Herschel Pop Quiz Backpack", "Outdoor", 74.99, 30, 0),
-  ("Liverpool FC Home Shirt", "Soccer", 65, 200, 0),
-  ("Adidas Ultraboost Shoes", "Running", 180, 25, 0);
+  ("IKEA Tertial Work Lamp", "Lighting", 34.99, 70, 0),
+  ("Wood/Marble Sit/Stand Desk", "Office", 1299.99, 5, 0),
+  ("Under Armor Climbing Shoes", "Outdoor", 130, 20, 0),
+  ("Jordan 4 Basketball Shoes", "Basketball", 160, 30, 0),
+  ("Lebron James Jersey", "Basketball", 100, 100, 0),
+  ("Nike AirMax 95", "Running", 150, 50, 0);
 
 SELECT * FROM products;
 
@@ -38,11 +38,11 @@ INSERT INTO departments (
   department_name, over_head_costs
 )
 VALUES
-  ("Tech", 10000),
-  ("Lighting", 2500),
-  ("Office", 3300),
-  ("Outdoor", 6500),
-  ("Soccer", 8775),
-  ("Running", 8250);
+  ("Tech", 8000),
+  ("Lighting", 7000),
+  ("Office", 6000),
+  ("Outdoor", 2500),
+  ("Basketball", 4000),
+  ("Running", 6000);
 
 SELECT * FROM departments;
