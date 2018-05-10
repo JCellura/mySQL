@@ -91,6 +91,12 @@ function checkout() {
                   setTimeout(checkout, 500);
                 } else {              
                   total = parseFloat(bamazon.price * quantity);
+
+                    //connect to the mysql database Departments and updates the saleTotal for the id of the item purchased
+                    connection.query("UPDATE departments SET product_sales = ? WHERE department_name = ?;", [res[0].product_sales + total, res[0].department_name], function(err, resultOne){
+                        if(err) console.log('error: ' + err);
+                        return resultOne;
+                    })
     
                   var updateStock = 'UPDATE products SET stock_quantity = ' +
                     (bamazon.stock_quantity - quantity) + ', product_sales = ' +
